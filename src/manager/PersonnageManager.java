@@ -24,10 +24,10 @@ public class PersonnageManager {
             for (Batiment batiment : CPlateau.getCloneBatiment()) {
                 if (batiment instanceof Base) {
                     if (perso instanceof Ouvrier) {
-                        if (!((Ouvrier) perso).isDansBase()) {
+                        if (!((Ouvrier) perso).isDansBase()) { //Tantque isDansBase = false on va vers la base
                             perso.vitesse = 1;
                             deplaceSensPersonnage(perso, batiment);
-                        }
+                        } //Si on est arrivé sur la base on stop l'ouvrier et isDansBase = true
                         if (perso.x <= batiment.x + batiment.width) {//  && perso.y <= batiment.y+batiment.height && perso.y >= batiment.y) {
                             perso.vitesse = 0;
                             ((Ouvrier) perso).setDansBase(true);
@@ -44,13 +44,20 @@ public class PersonnageManager {
                 if (batiment instanceof Mine) {
                     //Aller vers la mine
                     if (perso instanceof Ouvrier) {
-                        if (((Ouvrier) perso).isDansBase()) {
-                            perso.vitesse = 1;
-                            deplaceSensPersonnage(perso, batiment);
-                        }
-                        if (perso.x + perso.width >= batiment.x) { // && perso.y <= batiment.y+batiment.height && perso.y >= batiment.y) {
-                            perso.vitesse = 0;
-                            ((Ouvrier) perso).setDansBase(false);
+                        if(batiment.x == ((Ouvrier) perso).getMineX() && batiment.y == ((Ouvrier) perso).getMineY()){
+                            if (((Ouvrier) perso).isDansBase()) { //Tantque isDansBase = true on va vers la mine
+                                perso.vitesse = 1;
+                                deplaceSensPersonnage(perso, batiment);
+                            } //Si on est arrivé sur la mine on stop l'ouvrier et isDansBase = false
+                            if (perso.x + perso.width >= batiment.x) { // && perso.y <= batiment.y+batiment.height && perso.y >= batiment.y) {
+                                perso.vitesse = 0;
+                                int nbMaxOuvrier = 0;
+                                nbMaxOuvrier = ((Mine) batiment).getNbOuvrier();
+                                nbMaxOuvrier++;
+                                ((Mine) batiment).setNbOuvrier(nbMaxOuvrier);
+                                ((Ouvrier) perso).recolter();
+                                ((Ouvrier) perso).setDansBase(false);
+                            }
                         }
                     }
                 }

@@ -3,18 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/bo/Personnage.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/bo/Ennemi.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/threads/GameThread.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/bo/Mine.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/manager/PersonnageManager.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/bo/Ouvrier.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/view/Plateau.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/view/Jeu.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/bo/CPlateau.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/manager/BatimentManager.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/manager/UIManager.java</file>
-            <file>file:/C:/Users/Cyril/Documents/NetBeansProjects/TowerCraft/src/towercraft/TowerCraft.java</file>
+            <file>file:/C:/Users/Cyril/Documents/GitHub/TCD/src/manager/PersonnageManager.java</file>
+            <file>file:/C:/Users/Cyril/Documents/GitHub/TCD/src/bo/Ouvrier.java</file>
+            <file>file:/C:/Users/Cyril/Documents/GitHub/TCD/src/bo/Mine.java</file>
+            <file>file:/C:/Users/Cyril/Documents/GitHub/TCD/src/bo/Personnage.java</file>
         </group>
     </open-files>
 </project-private>

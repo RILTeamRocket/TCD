@@ -18,10 +18,14 @@ public class Mine extends Batiment {
     public void setNbOuvrier(int nbOuvrier) {
         this.nbOuvrier = nbOuvrier;
     }
+
+    public int getNbOuvrier() {
+        return nbOuvrier;
+    }
     
     public Mine(int x, int y, int width, int height) {
         super(x, y, width, height);
-        this.maxOuvrier = 10;
+        this.maxOuvrier = 5;
         this.nbOuvrier = 0;
     }
     

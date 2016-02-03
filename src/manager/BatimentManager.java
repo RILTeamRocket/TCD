@@ -47,6 +47,11 @@ public class BatimentManager {
         int xmine = UIManager.getFenetre().Jeu.getWidth()-50;
         int ymine = UIManager.getFenetre().Jeu.getHeight()/2-50/2;
         CPlateau.AddBatiment(new Mine(xmine, ymine, 50, 50));
+        
+        //Ajout d'une mine
+        int xmine2 = UIManager.getFenetre().Jeu.getWidth()-50;
+        int ymine2 = UIManager.getFenetre().Jeu.getHeight()/3-50/2;
+        CPlateau.AddBatiment(new Mine(xmine2, ymine2, 50, 50));
     }
     
     public static void creerTourelle()

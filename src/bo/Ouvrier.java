@@ -80,7 +80,7 @@ public class Ouvrier extends Personnage {
      * 
      * Trouve la mine la plus proche de l'ouvrier
      */
-    private void TrouverMine(){
+    public void TrouverMine(){
         double distanceMax = 100000;
         double distance = 0;
         boolean trouve = false;
@@ -146,5 +146,14 @@ public class Ouvrier extends Personnage {
         this.qteRecolte = 0;
     }
 
+    public int getMineX() {
+        return mineX;
+    }
+
+    public int getMineY() {
+        return mineY;
+    }
+
+    
 }
 
